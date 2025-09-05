@@ -13,6 +13,8 @@ import type SRPlugin from "src/main";
 import { SRSettings } from "src/settings";
 import { TopicPath } from "src/topic-path";
 
+import { randomReview } from "src/plugins/random-review";
+
 export class DeckUI {
     public plugin: SRPlugin;
     public mode: FlashcardMode;
@@ -191,6 +193,13 @@ export class DeckUI {
         // https://github.com/st3v3nmw/obsidian-spaced-repetition/issues/709
         deckTreeSelf.addEventListener("click", () => {
             this.startReviewOfDeck(deck);
+        });
+
+        //* 右键随机抽取10道题
+        deckTreeSelf.addEventListener("contextmenu", (e) => {
+            e.preventDefault();
+           // console.log(deck);
+            randomReview(deck, 10);
         });
 
         for (const subdeck of deck.subdecks) {
