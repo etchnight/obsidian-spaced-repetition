@@ -2,6 +2,10 @@
 
 <img src="https://img.shields.io/github/downloads/st3v3nmw/obsidian-spaced-repetition/total" /> <img src="https://img.shields.io/github/downloads/st3v3nmw/obsidian-spaced-repetition/latest/total?style=flat-square" /> <img src="https://img.shields.io/github/manifest-json/v/st3v3nmw/obsidian-spaced-repetition?style=flat-square" /> <img alt="Codecov" src="https://img.shields.io/codecov/c/gh/st3v3nmw/obsidian-spaced-repetition">
 
+[!IMPORTANT]
+在卡组上右键，会在控制台输出随机抽取的10道题目，方便进行学习效果测试
+
+
 Fight the forgetting curve by reviewing flashcards & notes using spaced repetition.
 
 - Check the documentation [here](https://www.stephenmwangi.com/obsidian-spaced-repetition/).
