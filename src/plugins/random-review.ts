@@ -26,8 +26,12 @@ function card2text(cards: Card[]) {
     let question = "";
     let answer = "";
     for (let i = 0; i < cards.length; i++) {
-        question += `${i + 1}. ${cards[i].front}\n\n---\n\n`;
-        answer += `${i + 1}. ${cards[i].back}\n\n---\n\n`;
+        question +=
+            `### 第${i + 1}题 \n\n` +
+            ` ${cards[i].front}\n\n` +
+            `### 第${i + 1}题 答案\n\n` +
+            `---\n\n`;
+        answer += `### 第${i + 1}题 \n\n ${cards[i].back}\n\n ---\n\n`;
     }
     return `问题\n\n${question}\n\n答案\n\n${answer}`;
 }
